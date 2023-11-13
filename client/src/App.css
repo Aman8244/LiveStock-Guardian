@@ -1,0 +1,744 @@
+@media screen and (min-width:900px) {
+
+  /* Reset some default styles */
+  header {
+    background: linear-gradient(to bottom, #79d997, #87c490);
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    padding: 1% 0% 1% 0%;
+    margin: 0;
+  }
+
+  .logo a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #636e62;
+    /* Your chosen text color */
+    text-decoration: none;
+    transition: color 0.3s;
+    /* Add a smooth color transition */
+  }
+
+  /* Add a hover effect to change the text color */
+  .logo a:hover {
+    color: #4CAF50;
+    /* Your chosen hover color (green) */
+    transform: scale(1.05);
+    /* Add a scaling effect on hover for a modern feel */
+  }
+
+  .nav-title {
+    width: 85%;
+    padding-left: 3%;
+  }
+
+  .nav-title a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-links {
+    width: 15%;
+    text-align: center;
+    margin-top: .5rem;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    font-family: serif;
+    background: linear-gradient(to bottom, #a7eaa1, #8ddea4);
+    color: #fff;
+    padding: 4%;
+    font-size: 1.1rem;
+
+  }
+
+  .hero {
+    position: relative;
+    /* Add this property */
+    text-align: left;
+    background: url("../public/cow.webp");
+    overflow: hidden;
+    background-size: cover;
+    min-height: 35rem;
+    margin-top: 0;
+    padding-top: 2%;
+    width: 100%;
+    min-height: 1000px;
+  }
+
+  /* Add a pseudo-element for the blur effect */
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    backdrop-filter: blur(15px);
+    /* Adjust the blur radius as needed */
+    filter: blur(5px);
+    /* Adjust the blur radius as needed */
+    z-index: -1;
+  }
+
+  .hero-content {
+    margin: 10% 0% 10% 5%;
+    color: #000000;
+    font-family: serif;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-content h2 {
+    font-family: sans-serif;
+    font-size: 2.3;
+    color: #fff;
+  }
+
+  .hero-content h1 span {
+    color: #fff;
+  }
+
+  .home-body {
+    background-color: #f5f5f5;
+  }
+
+  .hero-content h2 span {
+    color: #000;
+  }
+
+  .hr-rule1 {
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+  }
+
+  .hr-rule2 {
+    width: 20%;
+    margin: .5% 0% 0% 0%;
+    padding: 0%;
+    background-color: #ebebe8;
+  }
+
+  .hr-rule1,
+  .hr-rule2 {
+    height: 3px;
+    border: 0;
+  }
+
+  .hero-content p {
+    width: 40%;
+    margin-top: 28%;
+    font-size: 1.9rem;
+    color: #dfe6da;
+    font-family: Montserrat;
+  }
+
+  .hero button {
+    background-color: #4CAF50;
+    /* Green background color */
+    color: #fff;
+    /* White text color */
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .hero button:hover {
+    background-color: #45a049;
+    /* Darker green color on hover */
+  }
+
+  .features {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .feature {
+    width: 25%;
+    margin: 1%;
+    padding: 2%;
+    background-color: #dde191;
+    border: 2.5px solid #acacae;
+    border-radius: .5rem;
+    border-bottom-color: #f5f5f5;
+    border-right-color: #f5f5f5;
+    box-shadow: 5px 5px 5px #8c8c8c;
+    background-color: #c0dc9e;
+  }
+
+  /* Style for "Why Us" section */
+  .why-us {
+    background-color: #f4f4f4;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .why-us h2 {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .why-us p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+  }
+
+  /* Style for "Testimonials" section */
+  .testimonials {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .testimonials h2 {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .testimonial {
+    font-size: 16px;
+    color: #555;
+    margin:2% 15% 2% 15%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  /* Style for "Contact Us" section */
+  .contact {
+    background-color: #f4f4f4;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .contact h2 {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .contact p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+  }
+
+  .contact a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+
+  .contact a:hover {
+    text-decoration: underline;
+  }
+
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .sign-in-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    width: 300px;
+  }
+
+  .input-field {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+
+  .new-user-text {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .register-button {
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .register-button:hover {
+    background-color: #449d44;
+  }
+
+  .signUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    width: 300px;
+  }
+
+  .signUp input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .signUp button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .signUp button:hover {
+    background-color: #0056b3;
+  }
+
+  .signUp div {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .signUp button.secondary-button {
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .signUp button.secondary-button:hover {
+    background-color: #449d44;
+  }
+
+  .signUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+  }
+
+  .signUp input {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .signUp button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .signUp button:hover {
+    background-color: #0056b3;
+  }
+
+  .signUp div {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .signUp button.secondary-button {
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .signUp button.secondary-button:hover {
+    background-color: #449d44;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  .visible {
+    visibility: visible;
+  }
+
+  /* Add styles for the form container */
+  .form-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+  }
+
+  /* Add styles for labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  /* Add styles for input fields */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /* Add styles for the select element */
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /* Add styles for the Submit button */
+  button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .pred-form {
+    width: 60%;
+
+  }
+
+  .dashboard-div {
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+  }
+
+  .profile-div {
+    width: 25%;
+    text-align: center;
+  }
+
+  #dp {
+    height: 200px;
+    width: 250px;
+    border-radius: 100%;
+    border: 4px solid rgb(133, 203, 133);
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+  .wrapper-body{
+    background-color: #7ad88e;
+    padding-top: 2%;
+    padding-bottom: 5%;
+  }
+  .wrapper {
+    min-width: 530px;
+    margin: 3% 16.5% 3% 17.5%;
+    width: 60%;
+    background: #fff;
+    padding: 5%;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .wrapper h2 {
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .wrapper h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    border-radius: 12px;
+    background: #40f4a6;
+  }
+
+  .wrapper form {
+    margin-top: 30px;
+    min-width: 350px;
+  }
+
+  .wrapper form .input-box {
+    height: 52px;
+    margin: 18px 0;
+  }
+
+  form .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    border: 1.5px solid #52d743;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+
+  .input-box input:focus,
+  .input-box input:valid {
+    border-color: #72cf67;
+  }
+
+  form .policy {
+    display: flex;
+    align-items: center;
+  }
+
+  form h3 {
+    color: #707070;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+
+  .input-box.button input {
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    background: #1aaf0f;
+    cursor: pointer;
+  }
+
+  .input-box.button input:hover {
+    background: #7ad88e;
+  }
+
+  form .text h3 {
+    color: #333;
+    width: 100%;
+    text-align: center;
+  }
+
+  form .text h3 a {
+    color: #7ce474;
+    text-decoration: none;
+  }
+
+  form .text h3 a:hover {
+    text-decoration: underline;
+  }
+  .btn-login{
+    background:transparent ;
+    border: 0;
+    padding: 5px;
+    color: #119dda;
+    border-radius: .2rem;
+    font-size: 1rem;
+  }
+  .btn-logout{
+    background:transparent;
+    border: 1px solid red;
+    color: red;
+    padding: 2%;
+    font-size: 1.2rem;
+    border-radius: .3rem;
+  }
+  .btn-logout:hover{
+    color: white;
+    background-color: red;
+  }
+  .page-heading {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 16px;
+  }
+  
+  /* Style for the highlighted word */
+  .highlight {
+    background-color: #FF5722; /* Change this to your preferred highlight color */
+    color: #fff;
+    padding: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.5em; /* Adjust the font size as needed */
+  }
+  .container {
+    height: 71vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3f2fd;
+  }
+  .testimonial {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 45px 0;
+    overflow: hidden;
+  }
+  .image {
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  .testimonial .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    height: 100%;
+    width: 100%;
+  }
+  .slide p {
+    text-align: center;
+    padding: 0 80px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+  }
+  .slide {
+    padding: 4px; /* Adjust the padding to control the gap */
+    /* Other existing styles for the .slide class */
+    text-align: center;
+  }
+  .slide .quote-icon {
+    font-size: 30px;
+    color: #126a20;
+  }
+  .slide .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .details .name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+  }
+  .details .job {
+    font-size: 23px;
+    font-weight: 400;
+    color: #333;
+  }
+  /* swiper button css */
+  .nav-btn {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transform: translateY(30px);
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+  }
+  .nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .nav-btn::after,
+  .nav-btn::before {
+    font-size: 20px;
+    color: #fff;
+  }
+  .swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.8);
+  
+  }
+  .swiper-pagination-bullet {
+    margin-top: 30px; /* Adjust the margin as needed to create the desired gap */
+    width: 8px; /* Adjust the width of the bullets if needed */
+    height: 8px; /* Adjust the height of the bullets if needed */
+    background-color: #98d27b; /* Change the bullet color if desired */
+  }
+  .cta-button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #98d24b; /* Change this to your preferred button color */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+}
